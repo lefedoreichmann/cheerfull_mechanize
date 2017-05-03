@@ -1,0 +1,19 @@
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+/home/vagrant/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20170429-4411-jnlqpa.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR="
+compiling threads.c
+compiling locker.c
+compiling context.c
+compiling breakpoint.c
+compiling byebug.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/byebug-9.0.6/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20170429-4411-1q2mh59/byebug

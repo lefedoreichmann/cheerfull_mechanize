@@ -1,0 +1,217 @@
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
+/home/vagrant/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170429-29655-cv6961.rb extconf.rb
+checking for unistd.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_without_gvl()... yes
+checking for sys/select.h... yes
+checking for poll.h... yes
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for port.h... no
+checking for sys/resource.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/extensions/x86_64-linux/2.3.0-static/nio4r-1.2.1/mkmf.log
+
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
+make "DESTDIR=" clean
+
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
+make "DESTDIR="
+compiling nio4r_ext.c
+nio4r_ext.c:7 から include されたファイル中:
+../libev/ev.c:487:48: 警告: コメント内に "/*" があります
+In file included from nio4r_ext.c:7:
+../libev/ev.c: In function ‘ecb_binary32_to_binary16’:
+../libev/ev.c:1273: 警告: 符合付きと符合無しの整数式同士の比較です
+In file included from nio4r_ext.c:7:
+../libev/ev.c: トップレベル:
+../libev/ev.c:1829: 警告: ‘ev_default_loop_ptr’ initialized and declared ‘extern’
+../libev/ev.c: In function ‘array_nextsize’:
+../libev/ev.c:1938: 警告: 符合付きと符合無しの整数式同士の比較です
+../libev/ev.c: In function ‘evpipe_init’:
+../libev/ev.c:2388: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+In file included from ../libev/ev.c:2691,
+                 from nio4r_ext.c:7:
+../libev/ev_epoll.c: トップレベル:
+../libev/ev_epoll.c:238: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_epoll.c:238: 警告: ‘__inline__’ is not at beginning of declaration
+../libev/ev_epoll.c:263: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_epoll.c:263: 警告: ‘__inline__’ is not at beginning of declaration
+../libev/ev_epoll.c:270: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_epoll.c:270: 警告: ‘__inline__’ is not at beginning of declaration
+In file included from ../libev/ev.c:2694,
+                 from nio4r_ext.c:7:
+../libev/ev_poll.c:42: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_poll.c:42: 警告: ‘__inline__’ is not at beginning of declaration
+../libev/ev_poll.c: In function ‘poll_poll’:
+../libev/ev_poll.c:110: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev_poll.c: トップレベル:
+../libev/ev_poll.c:129: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_poll.c:129: 警告: ‘__inline__’ is not at beginning of declaration
+../libev/ev_poll.c:142: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_poll.c:142: 警告: ‘__inline__’ is not at beginning of declaration
+In file included from ../libev/ev.c:2697,
+                 from nio4r_ext.c:7:
+../libev/ev_select.c:274: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_select.c:274: 警告: ‘__inline__’ is not at beginning of declaration
+../libev/ev_select.c:303: 警告: ‘static’ is not at beginning of declaration
+../libev/ev_select.c:303: 警告: ‘__inline__’ is not at beginning of declaration
+In file included from nio4r_ext.c:7:
+../libev/ev.c:2713: 警告: ‘static’ is not at beginning of declaration
+../libev/ev.c:2713: 警告: ‘__inline__’ is not at beginning of declaration
+../libev/ev.c: In function ‘loop_init’:
+../libev/ev.c:2917: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2917: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2917: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2917: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2920: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2920: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2920: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2920: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2921: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘ev_loop_destroy’:
+../libev/ev.c:2948: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2955: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:2965: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘loop_fork’:
+../libev/ev.c:3058: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘verify_watcher’:
+../libev/ev.c:3100: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3103: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘verify_heap’:
+../libev/ev.c:3113: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3114: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3115: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘array_verify’:
+../libev/ev.c:3126: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_verify’:
+../libev/ev.c:3144: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3157: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3161: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3162: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_default_loop’:
+../libev/ev.c:3239: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:3239: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:3239: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:3239: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:3240: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘timers_reify’:
+../libev/ev.c:3344: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘periodics_reify’:
+../libev/ev.c:3406: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_backend_poll’:
+../libev/ev.c:3551: 警告: no return statement in function returning non-void
+../libev/ev.c: In function ‘ev_run’:
+../libev/ev.c:3568: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3737: 警告: implicit declaration of function ‘rb_thread_call_without_gvl’
+../libev/ev.c:3752: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:3752: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_io_start’:
+../libev/ev.c:3926: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3927: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:3936: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_io_stop’:
+../libev/ev.c:3951: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_timer_start’:
+../libev/ev.c:3971: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_timer_stop’:
+../libev/ev.c:3999: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_periodic_start’:
+../libev/ev.c:4061: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_periodic_stop’:
+../libev/ev.c:4093: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘ev_signal_start’:
+../libev/ev.c:4130: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:4133: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:4155: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4155: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4155: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4155: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4156: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘ev_child_start’:
+../libev/ev.c:4251: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c: In function ‘infy_add’:
+../libev/ev.c:4368: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4370: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘infy_init’:
+../libev/ev.c:4474: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4474: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4474: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4474: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4475: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘infy_fork’:
+../libev/ev.c:4519: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4521: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘ev_stat_start’:
+../libev/ev.c:4595: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4595: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4595: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4595: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4595: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4596: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘ev_stat_stop’:
+../libev/ev.c:4628: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘ev_embed_start’:
+../libev/ev.c:4830: 警告: カンマ演算子の左側の式に効力がありません
+../libev/ev.c:4831: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4831: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4831: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4831: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4836: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4839: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4839: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4839: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4839: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4840: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4843: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4843: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4843: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:4843: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c: In function ‘ev_once’:
+../libev/ev.c:5053: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5053: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5053: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5053: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5060: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5060: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5060: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5060: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5063: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+../libev/ev.c:5179:27: 警告: コメント内に "/*" があります
+../libev/ev.c:5180:27: 警告: コメント内に "/*" があります
+../libev/ev.c: In function ‘ev_loop_destroy’:
+../libev/ev.c:2948: 警告: dereferencing pointer ‘childev.111’ does break strict-aliasing rules
+../libev/ev.c:2948: note: initialized from here
+../libev/ev.c: In function ‘ev_default_loop’:
+../libev/ev.c:3239: 警告: dereferencing pointer ‘childev.118’ does break strict-aliasing rules
+../libev/ev.c:3239: 警告: dereferencing pointer ‘childev.118’ does break strict-aliasing rules
+../libev/ev.c:3239: 警告: dereferencing pointer ‘childev.118’ does break strict-aliasing rules
+../libev/ev.c:3239: note: initialized from here
+../libev/ev.c:3239: 警告: dereferencing pointer ‘childev.118’ does break strict-aliasing rules
+../libev/ev.c:3239: note: initialized from here
+../libev/ev.c:3240: 警告: dereferencing pointer ‘childev.118’ does break strict-aliasing rules
+../libev/ev.c:3240: note: initialized from here
+compiling selector.c
+selector.c: In function ‘NIO_Selector_allocate’:
+selector.c:102: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+selector.c:102: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+selector.c:102: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+selector.c:102: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+selector.c:107: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+selector.c:107: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+selector.c:107: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+selector.c:107: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+compiling monitor.c
+monitor.c: In function ‘NIO_Monitor_initialize’:
+monitor.c:103: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+monitor.c:103: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+monitor.c:103: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+monitor.c:103: 警告: dereferencing type-punned pointer will break strict-aliasing rules
+linking shared-object nio4r_ext.so
+
+current directory: /home/vagrant/cheerfull_datacrawling/vendor/bundle/ruby/2.3.0/gems/nio4r-1.2.1/ext/nio4r
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20170429-29655-1tt8j6p
