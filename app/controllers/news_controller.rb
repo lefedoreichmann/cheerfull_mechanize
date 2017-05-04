@@ -18,20 +18,22 @@ class NewsController < ApplicationController
     @bacardinews = bacardpage.search('div.read')
 
     suntorypage = agent.get("http://www.suntory.co.jp/whatsnew/rss.xml?fromid=top")
-    suntorydoc = Nokogiri::HTML(suntorypage.body)    
-    sundoc_euc = NKF.nkf("-wm0",suntorydoc).sub(/euc-jp/,"utf-8")
-    #sundoc_euc = suntorydoc.toutf8 
-    @suntorynews = sundoc_euc
-    #@suntorynews = suntorydoc
+    #agent.page.encoding="Shift_JIS"
+    #suntorypage.page.encoding = 'Shift_JIS'          
+    suntory_doc = Nokogiri::HTML(suntorypage.body)    
+    suntory_doc.encoding= "UTF-8"
+   
+    #sundoc_euc = NKF.nkf("-wm0",suntory_doc).sub(/euc-jp/,"utf-8")
+    #@suntorynews = sundoc_euc
+    @suntorynews = suntory_doc
 
     kirinpage = agent.get("http://www.kirin.co.jp/rss/news/release.rdf")
-    kirindoc = Nokogiri::HTML(kirinpage.body)    
-    @kirinnews = kirindoc
-    #@elements = page.links
+    kirin_doc = Nokogiri::HTML(kirinpage.body)    
+    @kirinnews = kirin_doc
 
 
     asahipage = agent.get("http://www.asahibeer.co.jp/news.rdf")
-    asahidoc = Nokogiri::HTML(asahipage.body)    
-    @asahinews = asahidoc
+    asahi_doc = Nokogiri::HTML(asahipage.body)    
+    @asahinews = asahi_doc
   end
 end
